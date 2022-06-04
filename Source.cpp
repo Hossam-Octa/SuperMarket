@@ -1,8 +1,8 @@
-#include<iostream>
-#include<fstream>
-#include<algorithm>
-#include<string>
-#include"Functions.h"
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <string>
+#include "Functions.h"
 
 using namespace std;
 void main()

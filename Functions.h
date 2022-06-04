@@ -1,12 +1,15 @@
 ﻿#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <string>
 using namespace std;
 ofstream myfile("Data.txt", ios::app);
 struct product
 {
-	int product_code;
-	string product_name;
-	int quantity;
-	float product_price;
+	int product::product_code;
+	string product::product_name;
+	int product::quantity;
+	float product::product_price;
 };
 void add()
 {
@@ -70,7 +73,7 @@ void add()
 		cout << "Enter 'y' for yes or 'n' for no\n";
 	}
 }
-product display_product(int code)
+product display_product()
 {
 	while (!myfile.eof())
 	{
@@ -80,7 +83,7 @@ product display_product(int code)
 		}
 
 	}
-
+	
 }
 void modify()
 {
